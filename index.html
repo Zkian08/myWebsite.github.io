@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enriquez Shortcut</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: lightblue url("https://plus.unsplash.com/premium_photo-1667853262771-ad2d4cf372fb?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat fixed center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .grid {
+            display: flex;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .icon-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: none;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .icon-button img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        .icon-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+
+            .icon-button {
+                padding: 10px;
+            }
+
+            .icon-button img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="grid">
+            <a href="https://chatgpt.com/" class="icon-button">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6CqmIbWlf0UxGroEMna38ZnqYv5K7GlqmGQ&s" alt="Icon 1">
+            </a>
+            <a href="https://animeschedule.net/" class="icon-button">
+                <img src="https://external-preview.redd.it/2yzQgr8UWoE4MpHf2h3YEJckMZFdsU59_9abRM4ucaU.jpg?auto=webp&s=6531f3236eef96d53b4436393e5fef4308e33562" alt="Icon 2">
+            </a>
+            <a href="https://sketchfab.com/features/free-3d-models" class="icon-button">
+                <img src="https://static.sketchfab.com/static/builds/web/dist/static/assets/images/favicon/a81e1fd93fc053fed8a5f56640f886f8-v2.png" alt="Icon 3">
+            </a>
+            <a href="https://www.youtube.com/" class="icon-button">
+                <img src="https://cdn-icons-png.freepik.com/256/15707/15707874.png?semt=ais_hybrid" alt="Icon 4">
+            </a>
+            <a href="https://www.flaticon.com/" class="icon-button">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzZcZkHb1ryoSbKABkVp_5kVVOdb7dmN6R_Q&s" alt="Icon 4">
+            </a>
+            <a href="https://mail.google.com/mail/" class="icon-button">
+                <img src="https://static.vecteezy.com/system/resources/previews/022/484/516/non_2x/google-mail-gmail-icon-logo-symbol-free-png.png" alt="Icon 4">
+            </a>
+            <a href="https://drive.google.com/drive/" class="icon-button">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvt7ntBQeCweroNWsiyHTeiyNdPgsKBJ84aQ&s" alt="Icon 4">
+            </a>
+            <a href="https://www.messenger.com/" class="icon-button">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-2285/1024/logo-512.png" alt="Icon 4">
+            </a>
+            <!-- Add more buttons and links here -->
+        </div>
+    </div>
+
+</body>
+</html>
